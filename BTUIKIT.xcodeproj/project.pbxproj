@@ -14,6 +14,9 @@
 		0410B5692786E5F700B06283 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410B5682786E5F700B06283 /* HomeViewController.swift */; };
 		0410B56C2787DC8900B06283 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410B56A2787DC8900B06283 /* DetailViewController.swift */; };
 		0410B56D2787DC8900B06283 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0410B56B2787DC8900B06283 /* DetailViewController.xib */; };
+		044DDA6F278D2FF500E098BA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DDA6D278D2FF500E098BA /* CollectionViewCell.swift */; };
+		044DDA70278D2FF500E098BA /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044DDA6E278D2FF500E098BA /* CollectionViewCell.xib */; };
+		044DDA72278D306300E098BA /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DDA71278D306300E098BA /* AlbumViewController.swift */; };
 		045551D62787EBB700BD58FE /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045551D42787EBB700BD58FE /* DetailTableViewCell.swift */; };
 		045551D72787EBB700BD58FE /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045551D52787EBB700BD58FE /* DetailTableViewCell.xib */; };
 		045551DA2787FAFA00BD58FE /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045551D82787FAFA00BD58FE /* ShowImageViewController.swift */; };
@@ -33,6 +36,9 @@
 		0410B5682786E5F700B06283 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0410B56A2787DC8900B06283 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0410B56B2787DC8900B06283 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		044DDA6D278D2FF500E098BA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		044DDA6E278D2FF500E098BA /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		044DDA71278D306300E098BA /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		045551D42787EBB700BD58FE /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		045551D52787EBB700BD58FE /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		045551D82787FAFA00BD58FE /* ShowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 		0410B5672786E5CE00B06283 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				044DDA6C278D2FB100E098BA /* ScreenCollectionView */,
 				045551E1278819C100BD58FE /* Object */,
 				045551E42788223800BD58FE /* Screen Edit */,
 				045551DE2788198F00BD58FE /* Screen Home */,
@@ -92,6 +99,16 @@
 				045551E0278819A900BD58FE /* Screen Show Image */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		044DDA6C278D2FB100E098BA /* ScreenCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				044DDA6D278D2FF500E098BA /* CollectionViewCell.swift */,
+				044DDA6E278D2FF500E098BA /* CollectionViewCell.xib */,
+				044DDA71278D306300E098BA /* AlbumViewController.swift */,
+			);
+			path = ScreenCollectionView;
 			sourceTree = "<group>";
 		};
 		045551DE2788198F00BD58FE /* Screen Home */ = {
@@ -203,6 +220,7 @@
 				0410B55D2786E52000B06283 /* Assets.xcassets in Resources */,
 				0410B55B2786E51200B06283 /* Main.storyboard in Resources */,
 				0410B56D2787DC8900B06283 /* DetailViewController.xib in Resources */,
+				044DDA70278D2FF500E098BA /* CollectionViewCell.xib in Resources */,
 				045551DB2787FAFA00BD58FE /* ShowImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +234,8 @@
 			files = (
 				045551E327881A3600BD58FE /* Superman.swift in Sources */,
 				0410B56C2787DC8900B06283 /* DetailViewController.swift in Sources */,
+				044DDA6F278D2FF500E098BA /* CollectionViewCell.swift in Sources */,
+				044DDA72278D306300E098BA /* AlbumViewController.swift in Sources */,
 				0410B5562786E51200B06283 /* AppDelegate.swift in Sources */,
 				045551EB278823C700BD58FE /* EditNameViewController.swift in Sources */,
 				045551D62787EBB700BD58FE /* DetailTableViewCell.swift in Sources */,
