@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditNameViewController" customModule="BTUIKIT" customModuleProvider="target">
+            <connections>
+                <outlet property="editNameTextField" destination="SXX-xl-gtt" id="WKq-xD-5gd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6Q-dF-6Qc">
+                    <rect key="frame" x="147.5" y="318.5" width="80" height="30"/>
+                    <color key="backgroundColor" red="0.1811751066" green="0.85145859160000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="3dD-6k-ZYG"/>
+                        <constraint firstAttribute="height" constant="30" id="aTW-o8-gIj"/>
+                    </constraints>
+                    <state key="normal" title="Edit Name">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapEditButton:" destination="-1" eventType="touchUpInside" id="iOf-DQ-AOx"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SXX-xl-gtt">
+                    <rect key="frame" x="20" y="70" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="BVR-9j-hgA"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="X6Q-dF-6Qc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="03e-mU-aLK"/>
+                <constraint firstItem="X6Q-dF-6Qc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3Ob-jJ-T0I"/>
+                <constraint firstItem="SXX-xl-gtt" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="oPb-zp-Jl4"/>
+                <constraint firstItem="SXX-xl-gtt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="q6i-ue-wIY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SXX-xl-gtt" secondAttribute="trailing" constant="20" id="rj2-rO-l0U"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
