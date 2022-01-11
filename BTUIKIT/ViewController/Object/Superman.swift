@@ -11,6 +11,7 @@ class Superman {
     var name: String?
     var nameImage: String?
     var id: Int
+//    var age:
     
     init(name: String, nameImage: String,id: Int) {
         self.name = name
