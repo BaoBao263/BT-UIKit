@@ -1,5 +1,5 @@
 //
-//  CollectionViewCell.swift
+//  ImageCollectionCell.swift
 //  BTUIKIT
 //
 //  Created by Mac on 1/11/22.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
-
+class ImageCollectionCell: UICollectionViewCell {
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
 }

@@ -10,6 +10,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--List Album View Controller-->
+        <scene sceneID="ekw-nG-hqU">
+            <objects>
+                <viewController id="0s3-M4-gqj" customClass="ListAlbumViewController" customModule="BTUIKIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Wd-iV-28t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VrY-40-5PC">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dc8-yX-qFO">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FJr-v3-7N7" firstAttribute="bottom" secondItem="VrY-40-5PC" secondAttribute="bottom" id="ZDH-dH-2Sl"/>
+                            <constraint firstItem="VrY-40-5PC" firstAttribute="leading" secondItem="FJr-v3-7N7" secondAttribute="leading" id="ZIS-MW-G82"/>
+                            <constraint firstItem="VrY-40-5PC" firstAttribute="top" secondItem="FJr-v3-7N7" secondAttribute="top" id="aoL-g4-35Y"/>
+                            <constraint firstItem="FJr-v3-7N7" firstAttribute="trailing" secondItem="VrY-40-5PC" secondAttribute="trailing" id="c52-ik-tee"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FJr-v3-7N7"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yQi-1d-ewI"/>
+                    <connections>
+                        <outlet property="albumCollectionView" destination="VrY-40-5PC" id="We7-ML-1Cb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEr-6y-aaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="160.56971514242881"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -78,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079.2" y="129.98500749625188"/>
+            <point key="canvasLocation" x="2018.4000000000001" y="129.98500749625188"/>
         </scene>
         <!--Item-->
         <scene sceneID="lXr-2b-imB">
@@ -111,11 +148,31 @@
                     </tabBar>
                     <connections>
                         <segue destination="YCT-DQ-jBr" kind="relationship" relationship="viewControllers" id="kXL-7P-WTP"/>
+                        <segue destination="n92-Bb-XGq" kind="relationship" relationship="viewControllers" id="Tbm-Xf-v3c"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5b9-RA-gus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="-567.16641679160421"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="FiW-Fz-05Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n92-Bb-XGq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="0xy-ZV-Kft"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kG7-yy-q7B">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0s3-M4-gqj" kind="relationship" relationship="rootViewController" id="5JF-UY-RdR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uq6-xH-Lwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="160.56971514242881"/>
         </scene>
     </scenes>
     <resources>
